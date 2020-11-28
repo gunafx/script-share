@@ -1,0 +1,51 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+  <head>
+    <meta charset="utf-8">
+    <title><%= title %></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <meta property="og:title" content="">
+    <meta property="og:type" content="">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/lib/normalize.css' />
+    <link rel='stylesheet' href='/stylesheets/lib/main.css' />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel="stylesheet" href="/stylesheets/lib/codemirror.css">
+    <link rel="stylesheet" href="/stylesheets/lib/material-ocean.css">
+    <script src="/code_mirror/lib/codemirror.js"></script>
+    <script src="/code_mirror/mode/xml/xml.js"></script>
+    <script src="/code_mirror/mode/htmlmixed/htmlmixed.js"></script>
+    <script src="/code_mirror/mode/css/css.js"></script>
+    <script src="/code_mirror/mode/javascript/javascript.js"></script>
+
+    <script src="/javascripts/jquery-3.5.1.min.js"></script>
+  </head>
+  <body>
+    <div class="page-container">
+      <div class="header">
+        <div class="content-wrapper">
+          <header>
+            <div class="logo">
+              <h1><strong>Cod</strong>Editor</h1>
+            </div>
+            <div class="nav">
+                
+            </div>
+          </header>
+        </div>
+      </div>
+      <div class="main-container content-wrapper">
+        <%- include('./home/editors.ejs'); -%>
+        <%- include('./home/preview.ejs'); -%>
+        <%- include('./home/console.ejs'); -%>
+      </div>
+    </div>
+    <script src="/javascripts/code-mirror.js"></script>
+    <script src="/javascripts/basic-actions.js"></script>
+  </body>
+</html>

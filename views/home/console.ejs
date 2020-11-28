@@ -1,0 +1,22 @@
+<div class="console-container__wrap console-container--minimized">
+  <div class="console-container console-container__header">
+    <p class="heading--small console-heading">
+      <%- include('../../public/images/icons/terminal.svg'); -%>
+      console
+    </p>
+    <div class="console-actions">
+      <button data-console-toggle class="button__icon button__small console-action--minimize">
+        <%- include('../../public/images/icons/minus.svg'); -%>
+      </button>
+      <button data-console-toggle class="button__icon button__small  console-action--maximize">
+        <%- include('../../public/images/icons/maximize-2.svg'); -%>
+      </button>
+      <button data-console-close class="button__icon button__small console-action--close">
+        <%- include('../../public/images/icons/x.svg'); -%>
+      </button>
+    </div>
+  </div>
+  <div class="console-container console-container__content">
+    <ul class="console__content"></ul>
+  </div>
+</div>

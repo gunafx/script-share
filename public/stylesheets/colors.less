@@ -1,0 +1,16 @@
+@primary-color: #29273b;
+@secondary-color: #655f91;
+@accent-color: #fd9428;
+@white: #fff;
+@black: #000;
+@primary-dark-color: darken(@primary-color, 5%);
+
+#gradient-1(@color) {
+    background-image: linear-gradient(to bottom right, @color, darken(@color, 7.5%));
+    background-color: @color;
+}
+
+#list-reset() {
+    list-style: none;
+    padding: 0;
+}

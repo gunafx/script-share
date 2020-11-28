@@ -1,0 +1,19 @@
+<div class="preview-container__wrap">
+  <div class="preview-container__actions">
+    <a data-preview-mode="mobile" class="preview_action__item" href="javascript:;">
+      <%- include('../../public/images/icons/smartphone.svg'); -%>
+    </a>
+    <a data-preview-mode="tablet" class="preview_action__item" href="javascript:;">
+      <%- include('../../public/images/icons/tablet.svg'); -%>
+    </a>
+    <a data-preview-mode="desktop" class="preview_action__item active" href="javascript:;">
+      <%- include('../../public/images/icons/monitor.svg'); -%>
+    </a>
+  </div>
+  <div id="preview-frame-container" class="preview-container__frame">
+    <span class="preview-size" data-preview-size>full</span>
+    <div data-preview-wrap class="preview-frame-wrap">
+      <iframe id="preview-frame" class="preview-frame" src="about:blank"></iframe>
+    </div>
+  </div>
+</div>
